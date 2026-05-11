@@ -16,8 +16,11 @@ Pronóstico de la primera observación de la base de prueba: -6588.970957818888
 Pronóstico obtenido con la instrucción “predict”: 242.05056484
 
 Valor de R2:  0.9101041999638888
+
 Error absoluto medio:  7.582278595997424
+
 Error cuadratico medio:  311.19797055029375
+
 Raiz del error cuadratico medio:  17.64080413559126
 
 Explicación: a veces, al sacar manualmente los valores de valores_x, el orden puede no coincidir exactamente con el orden de los coeficientes, especialmente si el modelo fue entrenado con un DataFrame que tiene columnas ordenadas alfabéticamente o si tu subconjunto de prueba fue manipulado. Seguramente hay una desalineación en el orden de las variables o en el preprocesamiento. Lo más recomendable es usar .predict() siempre que puedas, ya que así evitas errores manuales y aprovechas todo el pipeline del modelo.
@@ -25,15 +28,21 @@ Explicación: a veces, al sacar manualmente los valores de valores_x, el orden p
 4. Repita el ejercicio 3 pero aplicando un modelo de regresión Ridge mediante el valor de Alpha óptimo.
 
 Valor de R2:  0.9127388477539915
+
 Error absoluto medio:  7.450651668123023
+
 Error cuadratico medio:  302.07744383975273
+
 Raiz del error cuadratico medio:  17.38037525025719
 
 5. Repita el ejercicio 3 pero aplicando un modelo de regresión Lasso mediante el valor de Alpha óptimo.
 
 Valor de R2:  0.9067951896584938
+
 Error absoluto medio:  7.453202795795379
+
 Error cuadratico medio:  322.65298058585995
+
 Raiz del error cuadratico medio:  17.962543822795812
 
 6. ¿Cuál de los 3 modelos de regresión resultó ser el mejor? Explique a detalle.
